@@ -4,21 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <h2>Unesi knjigu</h2>
-    <form action="" method="get">
-        <label for="title">Ime knjige</label>
-        <input type="text" id="title" name="title" placeholder="title">
 
-        <label for="author">Ime knjige</label>
-        <input type="text" id="author" name="author" placeholder="author">
 
-        <label for="title">stranice</label>
-        <input type="text" id="title" name="title" placeholder="title">
+    <div class="header">
 
+        <div class="header1">
+            <h1>BOOK LIBRARY</h1>
+            <img src="../Admin-dashboard/images/MD.png" alt="" height="50px" width="50px">
+        </div>
+
+        <div class="header2">
+
+            <button type="button" class="addBook">add book</button>
+        </div>
+
+    </div>
+
+
+  <div class="modal-overlay hidden">
+  <div class="modal">
+    <h2>Add new book</h2>
+
+    <form class="book-form">
+      <input type="text" name="title" placeholder="Title" required>
+      <input type="text" name="author" placeholder="Author" required>
+      <input type="number" name="pages" placeholder="Pages" min="10" max="9999" required>
+
+      <label>
+        <input type="checkbox" name="read">
+        Read
+      </label>
+
+      <div class="modal-buttons">
+        <button type="submit">Add</button>
+        <button type="button" class="close-modal">Cancel</button>
+      </div>
     </form>
+  </div>
+</div>
+
+
+
+<div class="library">
+
+</div>
+
 </body>
 </html>
